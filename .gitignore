@@ -1,0 +1,21 @@
+# Python virtual environment
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+
+# Local IDE configuration
+.gemini/
+.vscode/
+.idea/
+.DS_Store
+
+# Large datasets and training data (SMOTE generated CSVs are ~350MB+)
+Models/*.csv
+Dataset/*.csv
+!Dataset/Bank_Transaction_Fraud_Detection.csv
+
+# Large model binary artifacts
+Models/*.pkl
+Streamlit-app/fraud_model.pkl
